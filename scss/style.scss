@@ -1,0 +1,76 @@
+.my-font{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+.background{
+    background-color: #f0f6f8de;
+    
+}
+
+span{
+    text-transform: uppercase;
+    font-size: bold;
+}
+
+h2,.podes{
+    color: #a5a5a5;
+}
+
+.bg-podes{
+    background-color: #f5f4f4;
+}
+
+.back-top{
+
+    color:#ffffff;
+    right: 30px;
+    font-size: 30px;
+    position: fixed;
+    z-index: 1500;
+    opacity: 0;
+    visibility: hidden;
+    bottom: 40px;
+    background: #0d6efd;
+    transform: scale(0);
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 25px;
+    border-radius: 60px;
+
+
+    &::before{
+
+        content: "";
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        position: absolute;
+        z-index: -1;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden;
+        background: #0d6efd;
+    }
+
+    &:hover::before, &:focus::before{
+        opacity: 1;
+        visibility: visible;
+    }
+    &:hover,&:focus{
+        color: #ffffff;
+    }
+}
+
+.back-top-visible {
+    
+    transform: scale(1);
+    opacity: 1;
+    visibility: visible;
+ }
+
+ .bi-github{
+     font-size: 30px;
+ }
